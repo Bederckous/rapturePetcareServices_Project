@@ -39,9 +39,9 @@ def login():
     flash('Invalid credentials')
     return redirect(url_for('index'))
 
-@app.route('/subscribe')
-def subscribe():
-    return render_template('subscribe.html')
+@app.route('/payment')
+def payment():
+    return render_template('payment.html')
 
 @app.route('/payment', methods=['POST'])
 def payment():
